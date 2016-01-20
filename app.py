@@ -2,6 +2,8 @@
 import flask, os, json
 from flask import render_template, jsonify, Flask
 
+app = flask.Flask(__name__)
+
 @app.route('/')
 @app.route('/home')
 @app.route('/index')
